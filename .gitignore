@@ -1,0 +1,79 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Kubernetes / Kind
+.kube/
+*.kubeconfig
+kubeconfig
+*.log
+
+# Secrets (never commit these)
+*.secret
+*.secrets
+secrets/
+*.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Documentation drafts
+DRAFT-*.md
+TODO-*.md
+
+# Argo CD local overrides
+argocd/applications/*-local.yaml
+
+# Local configuration
+local/
+*.local.yaml
+*.local.yml
+
+# Cluster specific
+cluster-config/
+*.cluster.yaml
+
+# Backup files
+*.backup
+*.old
+
+# Test outputs
+coverage/
+*.coverage
+*.cover
+.hypothesis/
+.pytest_cache/

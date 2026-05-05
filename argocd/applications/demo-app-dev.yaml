@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo-api-dev
+  namespace: argocd
+  labels:
+    environment: dev
+    app: demo-api
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/ericwang984/sre-gitops-platform.git
+    targetRevision: main
+    path: apps/demo-app/overlays/dev
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
+    syncOptions:
+    - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
