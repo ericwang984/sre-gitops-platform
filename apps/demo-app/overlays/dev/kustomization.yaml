@@ -6,4 +6,4 @@ resources:
 patches:
   - path: patches/replica-count.yaml
 images:
-  - newTag: 7560b5f9a3233dd35ed2f0fd18fe37fd1c5dbdc0
+  - newTag: dc70420bd8be0607f7453c4bfb05acb72e4cc96e
