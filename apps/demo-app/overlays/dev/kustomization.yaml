@@ -6,4 +6,5 @@ resources:
 patches:
   - path: patches/replica-count.yaml
 images:
-  - newTag: dc70420bd8be0607f7453c4bfb05acb72e4cc96e
+  - name: ghcr.io/ericwang984/sre-demo-app
+    newTag: dc70420bd8be0607f7453c4bfb05acb72e4cc96e
