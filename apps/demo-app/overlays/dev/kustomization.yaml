@@ -1,10 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 namespace: dev
-
 resources:
   - ../../base
-
 patches:
   - path: patches/replica-count.yaml
+images:
+  - newTag: 7560b5f9a3233dd35ed2f0fd18fe37fd1c5dbdc0
