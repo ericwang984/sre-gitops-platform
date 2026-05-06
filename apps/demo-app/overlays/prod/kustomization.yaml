@@ -8,4 +8,4 @@ patches:
   - path: patches/resources.yaml
 images:
   - name: ghcr.io/ericwang984/sre-demo-app
-    newTag: v1.0.1
+    newTag: v1.0.0
