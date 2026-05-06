@@ -6,7 +6,6 @@ resources:
 patches:
   - path: patches/replica-count.yaml
   - path: patches/resources.yaml
-  - path: patches/ingress-host.yaml
 images:
   - name: ghcr.io/ericwang984/sre-demo-app
     newTag: v1.0.1
